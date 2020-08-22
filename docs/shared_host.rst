@@ -9,12 +9,21 @@ Descargar la última versión de Python desde https://www.python.org/downloads/
 
 
 wget https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tgz
+
 tar xvzf Python-3.8.5.tgz
+
 rm Python-3.8.5.tgz
+
 cd Python-3.8.5/
+
 ./configure --prefix=$HOME
+
 make
+
 make install
 
+echo 'alias python3="/home/username/bin/python3.8"' >> ~/.bashrc
 
+source ~/.bashrc
 
+python3 --version
